@@ -5,7 +5,7 @@
 :root{
 	--color-primary: #0079AA;
 	--color-secondry: #0079AA;
-	--color-hover: #0079AA;
+	--color-hover: #000;
 }
 
 /* Hex */
@@ -64,6 +64,7 @@
 .dlab-accordion.primary .acod-head a,
 .side-bar .widget_tag_cloud a:hover {
     background-color: #0079AA;
+    transition-duration: .3s;
 }
 
 /*Hex color :hover */
@@ -88,7 +89,7 @@
 .owl-btn-1.primary .owl-next:hover,
 .owl-btn-2.primary .owl-prev:hover, 
 .owl-btn-2.primary .owl-next:hover{
-    background-color: #0079AA;
+    background-color: #000;
 }
 .about-us .dlab-tabs .nav-tabs li.active{
 	border-right: 4px solid #0079AA;
