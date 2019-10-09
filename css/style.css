@@ -3037,14 +3037,16 @@ blockquote:before {
 	position: relative;
     border:1px solid rgba(0,0,0,0.10);
     border-width: 0 0 0 1px;	
+	transition:all 0.8s;
+    
 }
 .header-nav .nav > li > a.nav-link{
 	padding-left:12px;
 	padding-right:12px;
 }
 .header-nav .nav > li > a:hover {
-    background-color: transparent;
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 .header-nav .nav > li > a:active,
 .header-nav .nav > li > a:focus {
@@ -3068,7 +3070,7 @@ blockquote:before {
 .main-bar.bg-primary .header-nav .nav > li.active > a:after{
 	background:#fff;
 }
-.header-nav .nav > li > a:after{
+/*.header-nav .nav > li > a:after{
 	content: "";
     height: 5px;
     background: var(--color-primary);
@@ -3091,7 +3093,7 @@ blockquote:before {
 	-o-transform-origin:right;
 	right:auto;
 	left:0;
-}
+} */
 .header-nav .nav > li:hover > .sub-menu,
 .header-nav .nav > li:hover > .mega-menu {
     opacity: 1;
@@ -6399,12 +6401,12 @@ a,
 .dlab-we-find .dlab-box,
 .navbar-toggler,
 .logo-header,
-.header-nav .nav > li > a,
+/*.header-nav .nav > li > a,*/
 .extra-nav,
 .skew-secondry:hover,
 .skew-primary:hover,
 .skew-secondry:hover::after,
-.skew-primary:hover::after {
+/* .skew-primary:hover::after {
     -webkit-transition: all 0.8s linear;
     -moz-transition: all 0.8s linear;
     -ms-transition: all 0.8s linear;
@@ -6431,7 +6433,7 @@ a,
     -o-transition: all 0.8s ease-out;
     -ms-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out;
-}
+} */
 /*== >float-clearfix ==*/
 
 .clearfix:after,
@@ -11319,7 +11321,7 @@ button.scroltop.style1:hover:after {
 	-ms-transform: scale(1.3);
 	transform: scale(1.3);
 	opacity: 0;
-}
+} 
 button.scroltop.radius{
 	border-radius:100%;
 }
@@ -11524,7 +11526,6 @@ footer.footer-white .footer-bottom a {
 }
 .page-content {
     margin-top: 0;
-    padding-bottom: 50px;
 }
 .content-area {
     padding-top: 60px;
@@ -12665,7 +12666,7 @@ ol.commentlist li .star-rating {
     margin-left: 7px;
 }
 /* Hover Style  */
-.outline-hv{
+/* .outline-hv{
 	transition:all 0.5s;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
@@ -12676,7 +12677,7 @@ ol.commentlist li .star-rating {
 	outline: 10px solid rgba(255, 255, 255, 0.5);
     outline-offset: -30px;
 }
-
+/*
 /* Product Item */
 .product-item .dlab-info{
 	border-top: 1px solid #e9e9e9;
@@ -14107,7 +14108,8 @@ ol.commentlist li .star-rating {
 	}
 	.navstyle3 .header-nav .nav > li:hover > a,
 	.navstyle3 .header-nav .nav > li.active > a{
-		color:#fff;
+        color:#fff;
+        background-color:#000
 	}
 	.navstyle3 .header-nav .nav > li > .mega-menu,
 	.navstyle3 .header-nav .nav > li .sub-menu {
@@ -14118,7 +14120,8 @@ ol.commentlist li .star-rating {
 	.navstyle3 .header-nav .nav > li .sub-menu li:hover > a,
 	.navstyle3 .header-nav .nav > li .mega-menu li > a,
 	.navstyle3 .header-nav .nav > li .sub-menu li > a{
-		color:#fff;
+        color:#fff;
+        background-color: #000
 	}
 	.navstyle3 .header-nav .nav > li .sub-menu > li:hover > a,
 	.navstyle3 .header-nav .nav > li .sub-menu > li > a:hover{
