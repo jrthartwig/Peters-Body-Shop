@@ -32,6 +32,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-2.min.css">
 		<link rel="stylesheet" type="text/css" href="css/templete.css">
+		<link rel="stylesheet" href="css/form.css" >
+        <script src="form.js"></script>
 	<!-- Google Font -->
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
@@ -89,116 +91,53 @@
     <!-- header END -->
     <!-- Content -->
     <div class="page-content bg-white">
-        <!-- Contact Form -->
-		<div class="section-full content-inner contact-page-9 overlay-black-dark" style="background-image: url(images/background/bg5.jpg); background-position: 30% 100%">
-			<div class="container">
-                <div class="row">
-					<div class="col-lg-4 col-md-12 text-white">
-						<div class="row">
-							<div class="col-lg-12 col-md-12 m-b30">
-								<div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
-									<div class="icon-content">
-										<h5 class="dlab-tilte">
-											<span class="icon-sm text-primary"><i class="ti-location-pin"></i></span> 
-											Company Address
-										</h5>
-										<p>007 Dummy Ashoka Apartment, Gautam Marg, Rani Sati Nagar,Jaipur / India </p>
-										<h6 class="m-b15 text-black font-weight-400"><i class="ti-alarm-clock"></i> Office Hours</h6>
-										<p class="m-b0">Mon To Sat - 10.00 - 07.00</p>
-										<p>Sunday - Close</p>
-									</div>
+		<!-- Contact Form -->
+		<div class="container form-top">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+					<div class="panel panel-danger">
+						<div class="panel-body">
+							<form id="reused_form">
+								<div class="form-group">
+									<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+									<input type="text" name="name" class="form-control" placeholder="Enter Name">
 								</div>
-							</div>
-							<div class="col-lg-12 col-md-6 m-b30">
-								<div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
-									<div class="icon-content">
-										<h5 class="dlab-tilte">
-											<span class="icon-sm text-primary"><i class="ti-email"></i></span> 
-											E-mail
-										</h5>
-										<p class="m-b0">info@example.com</p>
-										<p class="m-b0">hr@example.com</p>
-										<p class="m-b0">support@example.com</p>
-									</div>
+								<div class="form-group">
+									<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+									<input type="email" name="email" class="form-control" placeholder="Enter Email">
 								</div>
-							</div>
-							<div class="col-lg-12 col-md-6 m-b30">
-								<div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
-									<div class="icon-content">
-										<h5 class="dlab-tilte">
-											<span class="icon-sm text-primary"><i class="ti-mobile"></i></span> 
-											Phone Numbers
-										</h5>
-										<p class="m-b0">+91-80033-93704</p>
-										<p class="m-b0">+91-80033-96875</p>
-									</div>
+								<div class="form-group">
+									<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+									<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
 								</div>
+								<div class="form-group">
+									<label><i class="fa fa-upload" aria-hidden="true"></i>Upload Your Files</label>
+									<input type="file" name="image" class="form-control">
+								</div>
+								<div class="form-group">
+									<button class="btn btn-raised btn-block btn-danger">Post &rarr;</button>
+								</div>
+							</form>
+							<div id="error_message" style="width:100%; height:100%; display:none; ">
+								<h4>
+									Error
+								</h4>
+								Sorry there was an error sending your form. 
 							</div>
+							<div id="success_message" style="width:100%; height:100%; display:none; ">
+<h2>Success! Your Message was Sent Successfully.</h2>
+</div>
 						</div>
 					</div>
-					<div class="col-lg-8 col-md-12 m-b30">
-						<form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s">
-							<h3 class="title-box font-weight-300 m-t0 m-b10">Let's Convert Your Idea into Reality <span class="bg-primary"></span></h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-							<div class="row">
-								<div class="col-lg-6 col-md-6">
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="ti-user text-primary"></i></span>
-											<input name="dzName" type="text" required class="form-control" placeholder="First Name">
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6">
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="ti-mobile text-primary"></i></span>
-											<input name="dzOther[Phone]" type="text" required class="form-control" placeholder="Phone">
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<div class="form-group">
-										<div class="input-group"> 
-											<span class="input-group-addon"><i class="ti-email text-primary"></i></span>
-											<input name="dzEmail" type="email" class="form-control" required  placeholder="Your Email Id" >
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6">
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="ti-check-box text-primary"></i></span>
-											<input name="dzOther[Subject]" type="text" required class="form-control" placeholder="Upload File">
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6">
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="ti-file text-primary"></i></span>
-											<input name="dzOther[Subject]" type="text" required class="form-control" placeholder="Upload File">
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<div class="form-group">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="ti-agenda text-primary"></i></span>
-											<textarea name="dzMessage" rows="4" class="form-control" required placeholder="Tell us about your project or idea"></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<button name="submit" type="submit" value="Submit" class="site-button button-md"> <span>Get A Free Quote!</span> </button>
-								</div>
-							</div>
-						</form>	
-					</div>
 				</div>
-            </div>
+			</div>
 		</div>
-        <!-- Contact Form END -->
+		<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtRkAg2R31fgLxvD4f7VR54w4OjbeX8YvimVJeH0AdwqnD2Q/viewform?embedded=true" width="640" height="966" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+		<!-- Contact Form END -->
+		<!-- Jared Questions: 
+		1. Top of form not showing
+		2. Styling
+		-->
     </div>
     <!-- Content END-->
     <!-- Footer -->
